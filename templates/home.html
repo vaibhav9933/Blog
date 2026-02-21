@@ -38,7 +38,7 @@
 <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark" style="background-image: url({{ post.featured_image.url }});background-blend-mode: overlay;background-size:cover;">
     <div class="col-md-8 px-0">
       <h1 class="display-4 font-italic">{{ post.title }}</h1>
-      <p class="lead my-3">{{post.short_description }}</p>
+      <p class="lead my-3">{{post.short_description | truncatewords:25}}</p>
       <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
     </div>
   </div>
@@ -55,7 +55,7 @@
         <div class="card-body">
           <h3>{{ post.title }}</h3>
           <small class="mb-1 text-muted">{{post.created_at | timesince }} | {{post.author}}</small>
-          <p class="card-text">{{ post.short_description }}</p>
+          <p class="card-text">{{ post.short_description| truncatewords:25}}</p>
         </div>
       </div>
     </div>
@@ -63,6 +63,8 @@
     {% endfor %}
   </div>
 
+  <!-- Recent Articles-->
+  <h3 class="text-uppercase text-warning" style="letter-spacing:2px">Recent Articles</h3>
   <main role="main" class="container p-0">
     <div class="row">
       <div class="col-md-8 blog-main">
@@ -71,7 +73,7 @@
         <div class="card-body">
           <h3>{{ post.title }}</h3>
           <small class="mb-1 text-muted">{{post.created_at | timesince }} | {{post.author}}</small>
-          <p class="card-text">{{ post.short_description }}</p>
+          <p class="card-text">{{ post.short_description | truncatewords:25}}</p>
         </div>
       </div>
       {% endfor %}
@@ -99,8 +101,7 @@
 
 </div>
 <footer class="blog-footer">
-  <p>Django blog built with  by <a href="#">Rathan Kumar</a></p>
-
+  <p>Django blog built with � by <a href="#">Rathan Kumar</a></p>
 </footer>
 </body>
 </html>
