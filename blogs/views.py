@@ -1,7 +1,4 @@
-from unicodedata import category
-
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import redirect, render, get_object_or_404
 from .models import Blog, Category
 
 # Create your views here.
@@ -10,7 +7,15 @@ from .models import Blog, Category
 def posts_by_category(request, category_id):
     # Fetech the posts that belongs to the category with the id of category_id
     posts = Blog.objects.filter(status='Published', category=category_id)
-    category = Category.objects.get(pk=category_id)
+    #use try/except when we have to do some custom actions when the category doesn't exist
+    try:
+        category = Category.objects.get(pk=category_id)
+    except:
+        # redirect to home page when category doesn't exit
+        return redirect('home')
+    #use get_object_or_404 when you want to show 404 page if the category doesn't exist
+    #category = get_object_or_404(Category, pk=category_id)
+
     context ={
         'posts':posts,
         'category':category,
