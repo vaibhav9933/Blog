@@ -10,7 +10,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home, name='home'),
     path('category/',include('blogs.urls')),
-    path('<slug:slug>/',BlogViews.blogs, name="blogs"),
     # Search endpoint
     path('blogs/search/', BlogViews.search, name='search'),
+    path('blogs/<slug:slug>/',BlogViews.blogs, name="blogs"),
+    path('register/', views.register, name='register'),
 ] +static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
