@@ -9,8 +9,8 @@ from django.shortcuts import redirect
 
 def home(request):
     # categories = Category.objects.all()
-    featured_posts = Blog.objects.filter(is_featured = True, status = 'Published').order_by('updated_at')
-    posts = Blog.objects.filter(is_featured = False, status = 'Published')
+    featured_posts = Blog.objects.filter(is_featured = True, status = 'Published', slug__isnull=False).exclude(slug='').order_by('updated_at')
+    posts = Blog.objects.filter(is_featured = False, status = 'Published', slug__isnull=False).exclude(slug='')
 
     #Fetching about us
     try:
