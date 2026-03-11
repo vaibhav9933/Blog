@@ -102,30 +102,25 @@ Implemented using **Bootstrap responsive design**.
 
 ## Homepage
 
-(Add screenshot here)
-
 ```
-screenshots/homepage.png
+<img width="1920" height="1078" alt="Image" src="https://github.com/user-attachments/assets/e6f56b28-2d26-4aac-b02c-aafaa76d8a61" />
 ```
 
 ---
 
 ## Blog Post Page
 
-(Add screenshot here)
 
 ```
-screenshots/blog-post.png
+<img width="1920" height="1078" alt="Image" src="https://github.com/user-attachments/assets/f5c4298b-f72e-4159-9687-1d8f63ed7447" />
 ```
 
 ---
 
 ## Dashboard
 
-(Add screenshot here)
-
 ```
-screenshots/dashboard.png
+<img width="1920" height="1078" alt="Image" src="https://github.com/user-attachments/assets/b9c5e60f-2cbf-45ab-8214-d21153b93cdb" />
 ```
 
 ---
