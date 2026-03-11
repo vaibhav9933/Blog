@@ -111,11 +111,8 @@ Implemented using **Bootstrap responsive design**.
 ## Blog Post Page
 
 
-```
 <img width="1920" height="1078" alt="Image" src="https://github.com/user-attachments/assets/f5c4298b-f72e-4159-9687-1d8f63ed7447" />
-```
 
----
 
 ## Dashboard
 
