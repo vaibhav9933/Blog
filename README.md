@@ -102,11 +102,9 @@ Implemented using **Bootstrap responsive design**.
 
 ## Homepage
 
-```
-<img width="1920" height="1078" alt="Image" src="https://github.com/user-attachments/assets/e6f56b28-2d26-4aac-b02c-aafaa76d8a61" />
-```
 
----
+<img width="1920" height="1078" alt="Image" src="https://github.com/user-attachments/assets/e6f56b28-2d26-4aac-b02c-aafaa76d8a61" />
+
 
 ## Blog Post Page
 
@@ -116,11 +114,10 @@ Implemented using **Bootstrap responsive design**.
 
 ## Dashboard
 
-```
+ 
 <img width="1920" height="1078" alt="Image" src="https://github.com/user-attachments/assets/b9c5e60f-2cbf-45ab-8214-d21153b93cdb" />
-```
 
----
+
 
 # 🏗 System Architecture
 
